@@ -1,57 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Restaurant Menu</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffebcd;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .appetizers, .main-courses {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #deb887;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to Delight Restaurant</h1>
-        <p>our restaurant , Delight offer a unique blend of traditional and contemporary culinary delights, set in a cozy, inviting atmosphere perfect for any occasion</p>
+        <h1>Welcome to ABC Restaurant</h1>
+        <p>Our restaurant, <b>ABC</b> offers a unique blend of traditional and contemporary culinary delights, set in a
+            cozy, inviting atmosphere perfect for any occasion.</p>
     </header>
-    <h1>Menu</h1>
-
-
-    <!-- Appetizers section  -->
-    <section>
-        <h2>Appetizers</h2>
-        <a href="#Appetizers">View Appetizers</a>
+    <h2>Menu</h2>
+    <section class="appetizers"> <!-- Styled with internal CSS -->
+        <h3>Appetizers</h3>
+        <a href="#appetizers">View Appetizers</a>
         <ul>
-          <img src="https://www.budgetbytes.com/wp-content/uploads/2023/08/Garlic-Bread-close.jpg" alt="Garlic Bread" width="210" height="210" />
-          <li>Garlic Bread</li>
-          <img src="https://www.allrecipes.com/thmb/QSsjryxShEx1L6o0HLer1Nn4jwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.jpg" alt="ruschetta" width="210" height="210" />
-          <li>Bruschetta</li>
-          <img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2020/12/Stuffed-Mushrooms-1.jpg" alt="Stuffed Mushrooms" width="210" height="210" />
-          <li>Stuffed Mushrooms</li>
+            <img src="https://www.budgetbytes.com/wp-content/uploads/2023/08/Garlic-Bread-close.jpg" alt="Garlic Bread"
+                width="80" height="80" />
+            <li>Garlic Bread</li>
+            <img src="https://www.allrecipes.com/thmb/QSsjryxShEx1L6o0HLer1Nn4jwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.jpg"
+                alt="Bruschetta" width="80" height="80" />
+            <li>Bruschetta</li>
         </ul>
-        </section>
-        <!-- Main course section  -->
     <section>
-        <h2>Main Course</h2>
-        <ol>
-          <li>Biryani</li>
-          <li>Butter Chicken</li>
-          <li>Korma</li>
+        <h3>Main Courses</h3>
+        <ol> <!--Ordered list, Observe the difference between ordered/unordered list-->
+            <li>Biryani</li>
+            <li>Butter Chicken</li>
+            <li>Korma</li>
         </ol>
+    <h3>Desserts</h3>
+    <ol>
+        <li style="color: red;">Cake</li> <!-- Styled with inline CSS -->
+        <li style="color: green;">Cookie</li> <!-- Styled with inline CSS -->
+        <li style="color: blue;">Candy</li> <!-- Styled with inline CSS -->
+    </ol>
     </section>
-
-    <!-- Dessert Section  -->
-    <section>
-
-        <h2>Dessert</h2>
-        <ol>
-          <li>Cake</li>
-          <li>Cookie</li>
-          <li>Candy</li>
-        </ol>
-    </section>
-    <form method="POST" action="">
-        <input type="text" name="Name" placeholder="Enter your Name"/>
-        <textarea rows="5"></textarea>
-        <button type="submit">Submit Review</button>
+    <h3>Submit your reviews here:</h3>
+    <form action="submit-review.php" method="post">
+        <input type="text" name="customer_name" placeholder="Your Name">
+        <textarea name="review" placeholder="Write your review here..."></textarea>
+        <input type="submit" value="Submit Review">
     </form>
-    <!-- Footer  -->
     <footer>
         <p>Contact us</p>
     </footer>
