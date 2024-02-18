@@ -21,7 +21,7 @@
         h2 {
             color: #333;
         }
-        .appetizers, .main-courses {
+        .menu-section{
             background-color: #ffffff;
             padding: 15px;
             margin: 15px;
@@ -46,7 +46,8 @@
             cozy, inviting atmosphere perfect for any occasion.</p>
     </header>
     <h2>Menu</h2>
-    <section class="appetizers"> <!-- Styled with internal CSS -->
+    <section class="menu-section">
+      <!-- Styled with internal CSS -->
         <h3>Appetizers</h3>
         <a href="#appetizers">View Appetizers</a>
         <ul>
@@ -57,18 +58,21 @@
                 alt="Bruschetta" width="80" height="80" />
             <li>Bruschetta</li>
         </ul>
-    <section>
+    </section>
+    <section class="menu-section">
         <h3>Main Courses</h3>
         <ol> <!--Ordered list, Observe the difference between ordered/unordered list-->
             <li>Biryani</li>
             <li>Butter Chicken</li>
             <li>Korma</li>
         </ol>
+    </section>
+    <section class="menu-section">
     <h3>Desserts</h3>
     <ol>
-        <li style="color: red;">Cake</li> <!-- Styled with inline CSS -->
-        <li style="color: green;">Cookie</li> <!-- Styled with inline CSS -->
-        <li style="color: blue;">Candy</li> <!-- Styled with inline CSS -->
+        <li style="color: red; font-weight: bold;">Special: Cake</li> <!-- Styled with inline CSS -->
+        <li>Cookie</li> <!-- Styled with inline CSS -->
+        <li>Candy</li> <!-- Styled with inline CSS -->
     </ol>
     </section>
     <h3>Submit your reviews here:</h3>
