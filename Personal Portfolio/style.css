@@ -39,6 +39,7 @@ section {
     padding: 10px;
     border: 1px solid #ddd;
     display: inline-block;
+    width: 40%;
 }
 
 #about{
@@ -67,6 +68,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.Skillsset{
+    display: flex;
 }
 
 #skills > ul > li{
